@@ -1,0 +1,84 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.4' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      2428,         76]
+NotebookOptionsPosition[      2173,         62]
+NotebookOutlinePosition[      2530,         78]
+CellTagsIndexPosition[      2487,         75]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"CH4Sol", "[", 
+   RowBox[{"S_", ",", "T_"}], "]"}], ":=", "\[IndentingNewLine]", 
+  RowBox[{"Module", "[", 
+   RowBox[{
+    RowBox[{"{", "out", "}"}], ",", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"tempK", "=", 
+      RowBox[{"T", "+", "273.16"}]}], ";", "\[IndentingNewLine]", 
+     RowBox[{"a1", "=", 
+      RowBox[{"-", "67.1962"}]}], ";", "\n", "     ", 
+     RowBox[{"a2", "=", "99.1624"}], ";", "\n", "     ", 
+     RowBox[{"a3", "=", "27.9015"}], ";", "\n", "     ", 
+     RowBox[{"a4", "=", "0"}], ";", "\n", "\[IndentingNewLine]", 
+     RowBox[{"b1", "=", 
+      RowBox[{"-", "0.072909"}]}], ";", "\n", "     ", 
+     RowBox[{"b2", "=", "0.041674"}], ";", "\n", "     ", 
+     RowBox[{"b3", "=", 
+      RowBox[{"-", "0.0064603"}]}], ";", "\[IndentingNewLine]", 
+     RowBox[{"out", "=", 
+      RowBox[{"Exp", "[", 
+       RowBox[{"a1", "+", 
+        RowBox[{"a2", "*", 
+         RowBox[{"100", "/", "tempK"}]}], "+", 
+        RowBox[{"a3", "*", 
+         RowBox[{"Log", "[", 
+          RowBox[{"tempK", "/", "100"}], "]"}]}], "+", 
+        RowBox[{"a4", "*", 
+         RowBox[{"tempK", "/", "100"}]}], "+", 
+        RowBox[{"S", "*", 
+         RowBox[{"(", 
+          RowBox[{"b1", "+", 
+           RowBox[{"b2", "*", 
+            RowBox[{"tempK", "/", "100"}]}], "+", 
+           RowBox[{"b3", "*", 
+            RowBox[{
+             RowBox[{"(", 
+              RowBox[{"tempK", "/", "100"}], ")"}], "^", "2"}]}]}], ")"}]}]}],
+        "]"}]}]}]}], "\[IndentingNewLine]", "]"}]}]], "Input",
+ CellChangeTimes->{{3.702492096605084*^9, 3.7024922518183737`*^9}}]
+},
+WindowSize->{976, 751},
+WindowMargins->{{47, Automatic}, {Automatic, 0}},
+FrontEndVersion->"10.4 for Mac OS X x86 (32-bit, 64-bit Kernel) (February 25, \
+2016)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 1611, 40, 233, "Input"]
+}
+]
+*)
+
